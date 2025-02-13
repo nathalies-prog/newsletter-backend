@@ -16,11 +16,11 @@ app.get('/', (c) => {
 });
 
 // to run with node
-/*serve({
+serve({
   fetch: app.fetch,
   port: 8080,
 });
-*/
+
 export default {
   fetch: app.fetch,
   port: 8080,
