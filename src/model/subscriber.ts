@@ -45,6 +45,6 @@ export class Subscriber {
       values: [id],
     };
     const result = await getPool().query(deleteSubscriberQuery);
-    return result.rows[0];
+    return true;
 }
 };

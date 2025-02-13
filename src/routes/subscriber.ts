@@ -55,7 +55,7 @@ subscriber.delete('/:id', async (c) => {
       return c.json({ error: 'Subscriber wurde nicht gefunden' }, 404);
   }
     return c.json({
-      data : subscriberToDelete,
+      message : `Subscriber ${id} wurde gelöscht`
     },200)
   }
   catch(error){
