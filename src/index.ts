@@ -12,7 +12,7 @@ const app = new Hono();
 app.route('/subscriber', subscriber);
 app.route('/newsletter',newsletter);
 app.get('/', (c) => {
-  return c.text('Hello Hono!');
+  return c.text(`Hello Hono! SERVER IS RUNNING ON  ${PORT}`);
 });
 
 // to run with node
